@@ -2,13 +2,13 @@
 def pickUpPoms():
   times = 5
   while times > 0:
-    set_servo_position(,) #claw down
-    set_servo_position(,) #claw close
-    set_servo_position(,) #claw up
-    set_servo_position(,) #claw open
+    set_servo_position(,) # Move claw down
+    set_servo_position(,) # Close claw
+    set_servo_position(,) # Move claw up
+    set_servo_position(,) # Open claw
     times--
   
-def goToPoms1():
+def goToPoms(): # Position the bot to grab the poms
   forward()
   left()
   forward()
@@ -16,10 +16,10 @@ def goToPoms1():
   forward()
   left()
 
-def putPomsInTray():
+def putPomsInTray(): # Deposit the poms into the tray
   
   
 enable_servos()
-goToPoms1()
+goToPoms()
 
 
